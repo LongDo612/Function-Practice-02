@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let array;
+        let a = parseInt(prompt("Enter number 1: "));
+        let b = parseInt(prompt("Enter number 2: "));
+        let c = parseInt(prompt("Enter number 3: "));
+        array = [a,b,c];
+
+        let minValue = (a) => {
+            let min = a[0];
+            let index;
+            for (let i=0;i<3;i++){
+                if(a[i]<min){
+                    index = i;
+                }
+            }
+            return index;
+        }
+
+        alert("Min value of array is: "+ array[minValue(array)]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = parseFloat(prompt("Enter a number: "));
+        let checkInt = (x) => {
+            if(x == parseInt(x) && x>0){
+                return true;
+            }
+            return false;
+        }
+
+        alert(checkInt(a));
+    </script>
+</body>
+</html>

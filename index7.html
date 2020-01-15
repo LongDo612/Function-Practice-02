@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter a number: "));
+        let b = parseInt(prompt("Enter a number: "));
+
+        alert("a before swap is: "+a);
+        alert("b before swap is: "+b);
+
+        let swap = (x,y) => {
+            var t = x;
+            x = y;
+            y = t;
+            return [x, y];
+        }
+        let c = swap(a,b);
+        alert("a after swap is: "+c[0]);
+        alert("b after swap is: "+c[1]);
+
+    </script>
+</body>
+</html>

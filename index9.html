@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let array = [];
+        let count = 0;
+        let index =0;
+        let check;
+
+        let displayArray = (a) => {
+            for (let i in a){
+                document.write(a[i] + " ");
+            }
+        }
+
+        let checkInArray = (a,x) => {
+            if(a.indexOf(x)==-1)
+                return -1;
+            for (let i=0;i<a.length;i++){
+                if(x == a[i]){
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        let main = () => {
+            do {
+                array[index] = prompt("Enter a character: ");
+                index++;
+                check = confirm("Do you want to continue?");
+            }while (check);
+            x = prompt("Enter a character to check: ");
+            alert(checkInArray(array,x));
+            document.write("Array is: <br>");
+            displayArray(array);
+        }
+        main();
+    </script>
+</body>
+</html>
